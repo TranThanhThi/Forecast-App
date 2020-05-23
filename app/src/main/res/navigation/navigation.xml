@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/currentWeatherFragment">
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="vn.edu.ntu.forecastapp.ui.weather.current.CurrentWeatherFragment"
+        android:label="Today"
+        tools:layout="@layout/fragment_current_weather" />
+    <fragment
+        android:id="@+id/futureWeatherFragment"
+        android:name="vn.edu.ntu.forecastapp.ui.weather.future.FutureWeatherFragment"
+        android:label="7 Days"
+        tools:layout="@layout/future_weather_fragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="vn.edu.ntu.forecastapp.ui.setting.SettingFragment"
+        android:label="Setting" />
+    <fragment
+        android:id="@+id/detailWeatherFragment"
+        android:name="vn.edu.ntu.forecastapp.ui.weather.future.detail.DetailWeatherFragment"
+        android:label="detail_weather_fragment"
+        tools:layout="@layout/detail_weather_fragment" />
+</navigation>

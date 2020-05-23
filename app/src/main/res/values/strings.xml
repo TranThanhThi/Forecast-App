@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ForecastApp</string>
+
+    <string-array name="unitEntries">
+        <item>Metric</item>
+        <item>Fahrenheit</item>
+        <item>Scientific</item>
+    </string-array>
+    <string-array name="unitValues">
+        <item>METRIC</item>
+        <item>FAHRENHEIT</item>
+        <item>SCIENTIFIC</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Weather Location">
+        <SwitchPreference
+            android:key="USE_DEVICE_LOCATION"
+            android:title="Use device location"
+            android:summary="Allow the app your get your location"
+            android:defaultValue="true"
+            android:disableDependentsState="true"/>
+
+        <EditTextPreference
+            android:key="CUSTOM_LOCATION"
+            android:title="Location"
+            android:summary="The location for which the weather is displayed"
+            android:defaultValue="London"
+            android:dependency="USE_DEVICE_LOCATION"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="UNITS">
+        <ListPreference
+            app:key="UNIT_SYSTEM"
+            android:title="Unit system"
+            android:summary="%s"
+            android:defaultValue="METRIC"
+            android:entries="@array/unitEntries"
+            android:entryValues="@array/unitValues"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
